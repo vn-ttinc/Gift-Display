@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ttinc.android.apps.giftdisplay.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/chooseGiftArea"
+        android:layout_width="match_parent"
+        android:layout_height="120.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#aa000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="A-1-2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="A-1-10" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="A-2-2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="A-2-5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="B-1-2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="B-1-10" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="B-2-2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="buttonClicked"
+                android:text="B-2-5" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.ttinc.android.apps.giftdisplay.layout.GiftDisplayArea
+        android:id="@+id/giftDisplayArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chooseGiftArea"
+        android:background="#88000000"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

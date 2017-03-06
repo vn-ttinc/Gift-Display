@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ttinc.android.apps.giftdisplay.layout.GiftDisplayView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="10.0dip"
+    android:layout_height="@dimen/gift_display_view_height">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="32.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/rounded_text"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="15.0dip"
+        android:text="Send a gift"
+        android:textColor="@android:color/white"
+        android:textSize="16.0dip" />
+
+    <TextView
+        android:id="@+id/combo_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="23.0dip"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_toRightOf="@id/title_text_view"
+        android:gravity="center"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="x10"
+        android:textColor="@android:color/white"
+        android:textSize="16.0dip"
+        android:textStyle="bold" />
+
+</com.ttinc.android.apps.giftdisplay.layout.GiftDisplayView>
