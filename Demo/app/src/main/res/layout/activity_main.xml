@@ -25,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="buttonClicked"
-                android:text="A-1-2" />
+                android:text="A-1-1" />
 
             <Button
                 android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="buttonClicked"
-                android:text="A-2-2" />
+                android:text="A-2-1" />
 
             <Button
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="buttonClicked"
-                android:text="B-1-2" />
+                android:text="B-1-1" />
 
             <Button
                 android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:onClick="buttonClicked"
-                android:text="B-2-2" />
+                android:text="B-2-1" />
 
             <Button
                 android:layout_width="match_parent"
