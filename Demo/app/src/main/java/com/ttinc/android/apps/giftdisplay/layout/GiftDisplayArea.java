@@ -2,6 +2,7 @@ package com.ttinc.android.apps.giftdisplay.layout;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
@@ -59,12 +60,13 @@ public class GiftDisplayArea extends FrameLayout {
             GiftEvent queuedEvent = eventQueue.get(idx);
             queuedEvent.giftCount += event.giftCount;
         } else {
-            eventQueue.add(event);
+            eventQueue.add(0, event);
         }
         handleNextEvent();
     }
 
     private void handleNextEvent() {
+        Log.e("@@@", "size: "+eventQueue.size());
         if (eventQueue.size() == 0) {
             return;
         }

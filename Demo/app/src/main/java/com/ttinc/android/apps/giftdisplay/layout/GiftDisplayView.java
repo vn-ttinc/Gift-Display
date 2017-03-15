@@ -48,6 +48,9 @@ public class GiftDisplayView extends RelativeLayout {
 
     @Override
     public boolean equals(Object obj) {
+        if (initialGiftEvent == null || obj == null) {
+            return false;
+        }
         return initialGiftEvent.equals(((GiftDisplayView) obj).initialGiftEvent);
     }
 
@@ -82,6 +85,7 @@ public class GiftDisplayView extends RelativeLayout {
 
     private void tick() {
         if (currentCombo >= finalCombo) {
+            initialGiftEvent = null;
             stopAnimationCombo();
             needsDismiss.run();
             return;

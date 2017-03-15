@@ -10,12 +10,10 @@ public class GiftEvent {
     public int giftCount;
 
     @Override
-    public int hashCode() {
-        return senderId + giftId;
-    }
-
-    @Override
     public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
         return senderId == ((GiftEvent) obj).senderId && giftId == ((GiftEvent) obj).giftId;
     }
 }
